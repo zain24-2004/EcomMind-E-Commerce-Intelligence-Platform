@@ -1,0 +1,895 @@
+{
+  "time_range_start": "2016-09-04 21:15:19",
+  "time_range_end": "2018-10-17 17:30:18",
+  "total_days": 772,
+  "total_orders": 99441,
+  "order_status_distribution": {
+    "delivered": 96478,
+    "shipped": 1107,
+    "canceled": 625,
+    "unavailable": 609,
+    "invoiced": 314,
+    "processing": 301,
+    "created": 5,
+    "approved": 2
+  },
+  "total_customer_rows": 99441,
+  "unique_customers": 96096,
+  "customers_by_state": {
+    "SP": 41746,
+    "RJ": 12852,
+    "MG": 11635,
+    "RS": 5466,
+    "PR": 5045,
+    "SC": 3637,
+    "BA": 3380,
+    "DF": 2140,
+    "ES": 2033,
+    "GO": 2020
+  },
+  "total_gmv_brl": 16008872.12,
+  "avg_payment_value_brl": 154.1,
+  "payment_type_distribution": {
+    "credit_card": 76795,
+    "boleto": 19784,
+    "voucher": 5775,
+    "debit_card": 1529,
+    "not_defined": 3
+  },
+  "avg_item_price_brl": 120.65,
+  "total_items_sold": 112650,
+  "avg_review_score": 4.086,
+  "review_score_distribution": {
+    "1": 11424,
+    "2": 3151,
+    "3": 8179,
+    "4": 19142,
+    "5": 57328
+  },
+  "total_products": 32951,
+  "total_categories": 73,
+  "total_sellers": 3095,
+  "repeat_purchase_rate_pct": 3.12,
+  "single_purchase_customers": 93099,
+  "repeat_purchase_customers": 2997,
+  "profiles": {
+    "orders": {
+      "table": "orders",
+      "n_rows": 99441,
+      "n_cols": 8,
+      "columns": {
+        "order_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 99441,
+          "top_values": {
+            "e481f51cbdc54678b7cc49136f2d6af7": 1,
+            "f01059d0d674e1282df4e8fbbe015aa2": 1,
+            "fbc17f0f2a2125054d5ac5c22d2d5120": 1,
+            "9373150545066777b1cd2bc20e93cf8e": 1,
+            "917399e96f92268dfa2c0351b1b75fba": 1
+          }
+        },
+        "customer_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 99441,
+          "top_values": {
+            "9ef432eb6251297304e76186b10a928d": 1,
+            "413f7e58270a32396af030a075b924be": 1,
+            "eb4350b67a0264c67e5e06a038e4afbb": 1,
+            "622b07d262d545d16efbd4363a89cb91": 1,
+            "c701fbfa77791abd05eef9eacf7ea7a8": 1
+          }
+        },
+        "order_status": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 8,
+          "top_values": {
+            "delivered": 96478,
+            "shipped": 1107,
+            "canceled": 625,
+            "unavailable": 609,
+            "invoiced": 314
+          }
+        },
+        "order_purchase_timestamp": {
+          "dtype": "datetime64[ns]",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 98875,
+          "min_date": "2016-09-04 21:15:19",
+          "max_date": "2018-10-17 17:30:18"
+        },
+        "order_approved_at": {
+          "dtype": "datetime64[ns]",
+          "null_count": 160,
+          "null_pct": 0.16,
+          "unique_count": 90733,
+          "min_date": "2016-09-15 12:16:38",
+          "max_date": "2018-09-03 17:40:06"
+        },
+        "order_delivered_carrier_date": {
+          "dtype": "datetime64[ns]",
+          "null_count": 1783,
+          "null_pct": 1.79,
+          "unique_count": 81018,
+          "min_date": "2016-10-08 10:34:01",
+          "max_date": "2018-09-11 19:48:28"
+        },
+        "order_delivered_customer_date": {
+          "dtype": "datetime64[ns]",
+          "null_count": 2965,
+          "null_pct": 2.98,
+          "unique_count": 95664,
+          "min_date": "2016-10-11 13:46:32",
+          "max_date": "2018-10-17 13:22:46"
+        },
+        "order_estimated_delivery_date": {
+          "dtype": "datetime64[ns]",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 459,
+          "min_date": "2016-09-30 00:00:00",
+          "max_date": "2018-11-12 00:00:00"
+        }
+      },
+      "duplicated_rows": 0,
+      "memory_mb": 25.85
+    },
+    "order_items": {
+      "table": "order_items",
+      "n_rows": 112650,
+      "n_cols": 7,
+      "columns": {
+        "order_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 98666,
+          "top_values": {
+            "8272b63d03f5f79c56e9e4120aec44ef": 21,
+            "1b15974a0141d54e36626dca3fdc731a": 20,
+            "ab14fdcfbe524636d65ee38360e22ce8": 20,
+            "9ef13efd6949e4573a18964dd1bbe7f5": 15,
+            "428a2f660dc84138d969ccd69a0ab6d5": 15
+          }
+        },
+        "order_item_id": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 21,
+          "min": 1.0,
+          "max": 21.0,
+          "mean": 1.1978,
+          "median": 1.0,
+          "std": 0.7051
+        },
+        "product_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 32951,
+          "top_values": {
+            "aca2eb7d00ea1a7b8ebd4e68314663af": 527,
+            "99a4788cb24856965c36a24e339b6058": 488,
+            "422879e10f46682990de24d770e7f83d": 484,
+            "389d119b48cf3043d311335e499d9c6b": 392,
+            "368c6c730842d78016ad823897a372db": 388
+          }
+        },
+        "seller_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 3095,
+          "top_values": {
+            "6560211a19b47992c3666cc44a7e94c0": 2033,
+            "4a3ca9315b744ce9f8e9374361493884": 1987,
+            "1f50f920176fa81dab994f9023523100": 1931,
+            "cc419e0650a3c5ba77189a1882b7556a": 1775,
+            "da8622b14eb17ae2831f4ac5b9dab84a": 1551
+          }
+        },
+        "shipping_limit_date": {
+          "dtype": "datetime64[ns]",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 93318,
+          "min_date": "2016-09-19 00:15:34",
+          "max_date": "2020-04-09 22:35:08"
+        },
+        "price": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 5968,
+          "min": 0.85,
+          "max": 6735.0,
+          "mean": 120.6537,
+          "median": 74.99,
+          "std": 183.6339
+        },
+        "freight_value": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 6999,
+          "min": 0.0,
+          "max": 409.68,
+          "mean": 19.9903,
+          "median": 16.26,
+          "std": 15.8064
+        }
+      },
+      "duplicated_rows": 0,
+      "memory_mb": 30.98
+    },
+    "payments": {
+      "table": "payments",
+      "n_rows": 103886,
+      "n_cols": 5,
+      "columns": {
+        "order_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 99440,
+          "top_values": {
+            "fa65dad1b0e818e3ccc5cb0e39231352": 29,
+            "ccf804e764ed5650cd8759557269dc13": 26,
+            "285c2e15bebd4ac83635ccc563dc71f4": 22,
+            "895ab968e7bb0d5659d16cd74cd1650c": 21,
+            "fedcd9f7ccdc8cba3a18defedd1a5547": 19
+          }
+        },
+        "payment_sequential": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 29,
+          "min": 1.0,
+          "max": 29.0,
+          "mean": 1.0927,
+          "median": 1.0,
+          "std": 0.7066
+        },
+        "payment_type": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 5,
+          "top_values": {
+            "credit_card": 76795,
+            "boleto": 19784,
+            "voucher": 5775,
+            "debit_card": 1529,
+            "not_defined": 3
+          }
+        },
+        "payment_installments": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 24,
+          "min": 0.0,
+          "max": 24.0,
+          "mean": 2.8533,
+          "median": 1.0,
+          "std": 2.6871
+        },
+        "payment_value": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 29077,
+          "min": 0.0,
+          "max": 13664.08,
+          "mean": 154.1004,
+          "median": 100.0,
+          "std": 217.4941
+        }
+      },
+      "duplicated_rows": 0,
+      "memory_mb": 17.02
+    },
+    "reviews": {
+      "table": "reviews",
+      "n_rows": 99224,
+      "n_cols": 7,
+      "columns": {
+        "review_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 98410,
+          "top_values": {
+            "7b606b0d57b078384f0b58eac1d41d78": 3,
+            "dbdf1ea31790c8ecfcc6750525661a9b": 3,
+            "32415bbf6e341d5d517080a796f79b5c": 3,
+            "0c76e7a547a531e7bf9f0b99cba071c1": 3,
+            "4219a80ab469e3fc9901437b73da3f75": 3
+          }
+        },
+        "order_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 98673,
+          "top_values": {
+            "c88b1d1b157a9999ce368f218a407141": 3,
+            "8e17072ec97ce29f0e1f111e598b0c85": 3,
+            "df56136b8031ecd28e200bb18e6ddb2e": 3,
+            "03c939fd7fd3b38f8485a0f95798f1f6": 3,
+            "5cb890a68b91b6158d69257e4e2bc359": 2
+          }
+        },
+        "review_score": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 5,
+          "min": 1.0,
+          "max": 5.0,
+          "mean": 4.0864,
+          "median": 5.0,
+          "std": 1.3476
+        },
+        "review_comment_title": {
+          "dtype": "object",
+          "null_count": 87656,
+          "null_pct": 88.34,
+          "unique_count": 4527,
+          "top_values": {
+            "Recomendo": 423,
+            "recomendo": 345,
+            "Bom": 293,
+            "super recomendo": 270,
+            "Excelente": 248
+          }
+        },
+        "review_comment_message": {
+          "dtype": "object",
+          "null_count": 58247,
+          "null_pct": 58.7,
+          "unique_count": 36159,
+          "top_values": {
+            "Muito bom": 230,
+            "Bom": 189,
+            "muito bom": 122,
+            "bom": 107,
+            "Recomendo": 100
+          }
+        },
+        "review_creation_date": {
+          "dtype": "datetime64[ns]",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 636,
+          "min_date": "2016-10-02 00:00:00",
+          "max_date": "2018-08-31 00:00:00"
+        },
+        "review_answer_timestamp": {
+          "dtype": "datetime64[ns]",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 98248,
+          "min_date": "2016-10-07 18:32:28",
+          "max_date": "2018-10-29 12:27:35"
+        }
+      },
+      "duplicated_rows": 0,
+      "memory_mb": 29.12
+    },
+    "customers": {
+      "table": "customers",
+      "n_rows": 99441,
+      "n_cols": 5,
+      "columns": {
+        "customer_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 99441,
+          "top_values": {
+            "06b8999e2fba1a1fbc88172c00ba8bc7": 1,
+            "c023f30c1147aeb0358474f3b1dbc707": 1,
+            "b5cbf43f42281920a175fc99650c91d6": 1,
+            "19f4e983f8f05b7de16670f8a0cf0ac7": 1,
+            "229ac14c6ee6d6a606264ebcc861beb7": 1
+          }
+        },
+        "customer_unique_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 96096,
+          "top_values": {
+            "8d50f5eadf50201ccdcedfb9e2ac8455": 17,
+            "3e43e6105506432c953e165fb2acf44c": 9,
+            "1b6c7548a2a1f9037c1fd3ddfed95f33": 7,
+            "ca77025e7201e3b30c44b472ff346268": 7,
+            "6469f99c1f9dfae7733b25662e7f1782": 7
+          }
+        },
+        "customer_zip_code_prefix": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 14994,
+          "min": 1003.0,
+          "max": 99990.0,
+          "mean": 35137.4746,
+          "median": 24416.0,
+          "std": 29797.939
+        },
+        "customer_city": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 4119,
+          "top_values": {
+            "sao paulo": 15540,
+            "rio de janeiro": 6882,
+            "belo horizonte": 2773,
+            "brasilia": 2131,
+            "curitiba": 1521
+          }
+        },
+        "customer_state": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 27,
+          "top_values": {
+            "SP": 41746,
+            "RJ": 12852,
+            "MG": 11635,
+            "RS": 5466,
+            "PR": 5045
+          }
+        }
+      },
+      "duplicated_rows": 0,
+      "memory_mb": 27.88
+    },
+    "products": {
+      "table": "products",
+      "n_rows": 32951,
+      "n_cols": 9,
+      "columns": {
+        "product_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 32951,
+          "top_values": {
+            "1e9e8ef04dbcff4541ed26657ea517e5": 1,
+            "d05cc9afc85771f597cf4bc9d8f12546": 1,
+            "71b7afd92c42feab780d5ea512fc7348": 1,
+            "5c5f3e091101bea69642eb3dd145b17d": 1,
+            "16d47089f9bc7f16de16cc4bd3b9dd49": 1
+          }
+        },
+        "product_category_name": {
+          "dtype": "object",
+          "null_count": 610,
+          "null_pct": 1.85,
+          "unique_count": 73,
+          "top_values": {
+            "cama_mesa_banho": 3029,
+            "esporte_lazer": 2867,
+            "moveis_decoracao": 2657,
+            "beleza_saude": 2444,
+            "utilidades_domesticas": 2335
+          }
+        },
+        "product_name_lenght": {
+          "dtype": "float64",
+          "null_count": 610,
+          "null_pct": 1.85,
+          "unique_count": 66,
+          "min": 5.0,
+          "max": 76.0,
+          "mean": 48.4769,
+          "median": 51.0,
+          "std": 10.2457
+        },
+        "product_description_lenght": {
+          "dtype": "float64",
+          "null_count": 610,
+          "null_pct": 1.85,
+          "unique_count": 2960,
+          "min": 4.0,
+          "max": 3992.0,
+          "mean": 771.4953,
+          "median": 595.0,
+          "std": 635.1152
+        },
+        "product_photos_qty": {
+          "dtype": "float64",
+          "null_count": 610,
+          "null_pct": 1.85,
+          "unique_count": 19,
+          "min": 1.0,
+          "max": 20.0,
+          "mean": 2.189,
+          "median": 1.0,
+          "std": 1.7368
+        },
+        "product_weight_g": {
+          "dtype": "float64",
+          "null_count": 2,
+          "null_pct": 0.01,
+          "unique_count": 2204,
+          "min": 0.0,
+          "max": 40425.0,
+          "mean": 2276.4725,
+          "median": 700.0,
+          "std": 4282.0387
+        },
+        "product_length_cm": {
+          "dtype": "float64",
+          "null_count": 2,
+          "null_pct": 0.01,
+          "unique_count": 99,
+          "min": 7.0,
+          "max": 105.0,
+          "mean": 30.8151,
+          "median": 25.0,
+          "std": 16.9145
+        },
+        "product_height_cm": {
+          "dtype": "float64",
+          "null_count": 2,
+          "null_pct": 0.01,
+          "unique_count": 102,
+          "min": 2.0,
+          "max": 105.0,
+          "mean": 16.9377,
+          "median": 13.0,
+          "std": 13.6376
+        },
+        "product_width_cm": {
+          "dtype": "float64",
+          "null_count": 2,
+          "null_pct": 0.01,
+          "unique_count": 95,
+          "min": 6.0,
+          "max": 118.0,
+          "mean": 23.1967,
+          "median": 20.0,
+          "std": 12.079
+        }
+      },
+      "duplicated_rows": 0,
+      "memory_mb": 6.6
+    },
+    "sellers": {
+      "table": "sellers",
+      "n_rows": 3095,
+      "n_cols": 4,
+      "columns": {
+        "seller_id": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 3095,
+          "top_values": {
+            "3442f8959a84dea7ee197c632cb2df15": 1,
+            "e26901d5ab434ce92fd9b5c256820a4e": 1,
+            "7e3f87d16fb353f408d467e74fbd8014": 1,
+            "9140bd1d9de28b197dce077bdd687438": 1,
+            "a2b911e9ad40dc7d61c142a4683e2d85": 1
+          }
+        },
+        "seller_zip_code_prefix": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 2246,
+          "min": 1001.0,
+          "max": 99730.0,
+          "mean": 32291.0595,
+          "median": 14940.0,
+          "std": 32713.4538
+        },
+        "seller_city": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 611,
+          "top_values": {
+            "sao paulo": 694,
+            "curitiba": 127,
+            "rio de janeiro": 96,
+            "belo horizonte": 68,
+            "ribeirao preto": 52
+          }
+        },
+        "seller_state": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 23,
+          "top_values": {
+            "SP": 1849,
+            "PR": 349,
+            "MG": 244,
+            "SC": 190,
+            "RJ": 171
+          }
+        }
+      },
+      "duplicated_rows": 0,
+      "memory_mb": 0.62
+    },
+    "geolocation": {
+      "table": "geolocation",
+      "n_rows": 1000163,
+      "n_cols": 5,
+      "columns": {
+        "geolocation_zip_code_prefix": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 19015,
+          "min": 1001.0,
+          "max": 99990.0,
+          "mean": 36574.1665,
+          "median": 26530.0,
+          "std": 30549.3357
+        },
+        "geolocation_lat": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 717360,
+          "min": -36.6054,
+          "max": 45.0659,
+          "mean": -21.1762,
+          "median": -22.9194,
+          "std": 5.7159
+        },
+        "geolocation_lng": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 717613,
+          "min": -101.4668,
+          "max": 121.1054,
+          "mean": -46.3905,
+          "median": -46.6379,
+          "std": 4.2697
+        },
+        "geolocation_city": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 8011,
+          "top_values": {
+            "sao paulo": 135800,
+            "rio de janeiro": 62151,
+            "belo horizonte": 27805,
+            "s\u00e3o paulo": 24918,
+            "curitiba": 16593
+          }
+        },
+        "geolocation_state": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 27,
+          "top_values": {
+            "SP": 404268,
+            "MG": 126336,
+            "RJ": 121169,
+            "RS": 61851,
+            "PR": 57859
+          }
+        }
+      },
+      "duplicated_rows": 261831,
+      "memory_mb": 136.59
+    },
+    "category_translation": {
+      "table": "category_translation",
+      "n_rows": 71,
+      "n_cols": 2,
+      "columns": {
+        "product_category_name": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 71,
+          "top_values": {
+            "beleza_saude": 1,
+            "alimentos": 1,
+            "fashion_esporte": 1,
+            "fashion_underwear_e_moda_praia": 1,
+            "construcao_ferramentas_seguranca": 1
+          }
+        },
+        "product_category_name_english": {
+          "dtype": "object",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 71,
+          "top_values": {
+            "health_beauty": 1,
+            "food": 1,
+            "fashion_sport": 1,
+            "fashion_underwear_beach": 1,
+            "construction_tools_safety": 1
+          }
+        }
+      },
+      "duplicated_rows": 0,
+      "memory_mb": 0.01
+    }
+  },
+  "feature_availability": [
+    {
+      "feature": "Revenue (GMV)",
+      "available": true,
+      "source": "payments.payment_value",
+      "notes": ""
+    },
+    {
+      "feature": "Order Volume",
+      "available": true,
+      "source": "orders.order_id",
+      "notes": ""
+    },
+    {
+      "feature": "Average Order Value (AOV)",
+      "available": true,
+      "source": "payments.payment_value / count(orders)",
+      "notes": ""
+    },
+    {
+      "feature": "Freight Value",
+      "available": true,
+      "source": "order_items.freight_value",
+      "notes": ""
+    },
+    {
+      "feature": "Cost of Goods Sold (COGS)",
+      "available": false,
+      "source": "N/A",
+      "notes": "LIMITATION: No cost data in dataset. Gross margin cannot be calculated."
+    },
+    {
+      "feature": "Gross Profit / Margin",
+      "available": false,
+      "source": "N/A",
+      "notes": "LIMITATION: Not in dataset."
+    },
+    {
+      "feature": "Customer Identity (unique)",
+      "available": true,
+      "source": "customers.customer_unique_id",
+      "notes": "customer_unique_id enables cross-order tracking"
+    },
+    {
+      "feature": "Customer Location",
+      "available": true,
+      "source": "customers.city, state, zip_code_prefix",
+      "notes": ""
+    },
+    {
+      "feature": "Customer Acquisition Date",
+      "available": true,
+      "source": "first order_purchase_timestamp per customer",
+      "notes": ""
+    },
+    {
+      "feature": "Product Category",
+      "available": true,
+      "source": "products.product_category_name + translation",
+      "notes": ""
+    },
+    {
+      "feature": "Product Dimensions/Weight",
+      "available": true,
+      "source": "products.*_cm, products.product_weight_g",
+      "notes": ""
+    },
+    {
+      "feature": "Product Price",
+      "available": true,
+      "source": "order_items.price",
+      "notes": "Selling price per item"
+    },
+    {
+      "feature": "Order Status",
+      "available": true,
+      "source": "orders.order_status",
+      "notes": "Values: delivered, shipped, canceled, etc."
+    },
+    {
+      "feature": "Delivery Timestamps",
+      "available": true,
+      "source": "orders.*_date",
+      "notes": "Purchase, approval, carrier, delivery, estimated"
+    },
+    {
+      "feature": "Cancellations (proxy for returns)",
+      "available": true,
+      "source": "orders.order_status = 'canceled'",
+      "notes": "No explicit return data; canceled orders used as proxy"
+    },
+    {
+      "feature": "Payment Type",
+      "available": true,
+      "source": "payments.payment_type",
+      "notes": "credit_card, boleto, voucher, debit_card"
+    },
+    {
+      "feature": "Installments",
+      "available": true,
+      "source": "payments.payment_installments",
+      "notes": ""
+    },
+    {
+      "feature": "Review Score",
+      "available": true,
+      "source": "reviews.review_score",
+      "notes": "1-5 stars"
+    },
+    {
+      "feature": "Marketing Spend",
+      "available": false,
+      "source": "N/A",
+      "notes": "SYNTHETIC: Will generate realistic synthetic data clearly labeled"
+    },
+    {
+      "feature": "Impressions / Clicks / CTR",
+      "available": false,
+      "source": "N/A",
+      "notes": "SYNTHETIC: Clearly labeled throughout"
+    },
+    {
+      "feature": "CAC / ROAS / CPC",
+      "available": false,
+      "source": "N/A",
+      "notes": "SYNTHETIC: Clearly labeled throughout"
+    },
+    {
+      "feature": "Attribution",
+      "available": false,
+      "source": "N/A",
+      "notes": "SYNTHETIC: Rule-based attribution on synthetic data. NOT causal inference."
+    },
+    {
+      "feature": "Web Sessions / Traffic",
+      "available": false,
+      "source": "N/A",
+      "notes": "LIMITATION: No session data in Olist"
+    },
+    {
+      "feature": "Cart Abandonment (raw)",
+      "available": false,
+      "source": "N/A",
+      "notes": "LIMITATION: No session/cart data. Proxy: orders with status='canceled' after approval."
+    },
+    {
+      "feature": "Seller Data",
+      "available": true,
+      "source": "sellers.*",
+      "notes": "Seller location only"
+    },
+    {
+      "feature": "Geolocation",
+      "available": true,
+      "source": "geolocation.lat, lng",
+      "notes": "By zip code prefix"
+    }
+  ],
+  "inspection_timestamp": "2026-09-19T15:08:51.954128"
+}
