@@ -90,6 +90,7 @@ CREATE TABLE IF NOT EXISTS fact_orders (
     item_total_brl              NUMERIC(12, 2),
     freight_total_brl           NUMERIC(12, 2),
     -- Metadata
+    data_source                 VARCHAR(20)     DEFAULT 'olist',
     created_at                  TIMESTAMP       DEFAULT NOW()
 );
 
@@ -154,7 +155,7 @@ CREATE TABLE IF NOT EXISTS customer_features (
 --   CLEARLY LABELED AS SYNTHETIC — NOT REAL BUSINESS DATA
 -- ────────────────────────────────────────────────────────────
 
-CREATE TABLE IF NOT EXISTS synthetic_campaigns (
+CREATE TABLE IF NOT EXISTS fact_marketing_synthetic (
     campaign_id             VARCHAR(50)     PRIMARY KEY,
     campaign_name           VARCHAR(100),
     channel                 VARCHAR(50),    -- google_ads, facebook, email, organic
@@ -171,6 +172,7 @@ CREATE TABLE IF NOT EXISTS synthetic_campaigns (
     cpc_brl                 NUMERIC(8, 4),
     roas                    NUMERIC(8, 4),
     conversion_rate         NUMERIC(8, 6),
+    data_source             VARCHAR(20)     DEFAULT 'synthetic',
     is_synthetic            BOOLEAN         DEFAULT TRUE,
     created_at              TIMESTAMP       DEFAULT NOW()
 );
